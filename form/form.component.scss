@@ -1,0 +1,43 @@
+.form-control {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bs-gray-300);
+}
+
+.esig-preview-container {
+    min-height: 631px; 
+    background-image: url(https://clarkstaff.com/wp-content/uploads/2023/03/section-bg-1-blur-bottom-1.webp); 
+    background-position: center;
+    position: relative;
+
+    .overlay-container {
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: .6;
+    }
+
+    .template-html-review {
+        transform: scale(.9);
+        position: absolute;
+        right: -3.2%;
+        z-index: 2;
+        top: 15%;
+    }
+
+    .btn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 27%;
+        max-width: 280px;
+        margin: auto;
+        z-index: 2;
+    }
+}

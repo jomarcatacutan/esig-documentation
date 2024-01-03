@@ -1,0 +1,8 @@
+::ng-deep .header {
+    margin-bottom: 50px;
+}
+
+.btn.menu-link:hover {
+    color: var(--bs-primary);
+    background-color: var(--bs-secondary) !important;
+}

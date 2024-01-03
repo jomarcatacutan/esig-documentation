@@ -1,0 +1,264 @@
+<div id="app_toolbar_container" class="card app-container  container-xxl d-flex flex-row justify-content-between p-3 pe-5 ps-5 ">
+    <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3 ">
+
+        <h1 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
+            E-Signature
+        </h1>
+        <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-5 my-0 pt-1">
+            <li class="breadcrumb-item text-muted">
+                <a href="/e-signature/form">Form</a>
+            </li>
+            <li class="breadcrumb-item">
+                <span class="bullet bg-gray-400 w-5px h-2px"></span>
+            </li>
+            <li class="breadcrumb-item text-muted">
+                E-Signature
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex align-items-center gap-2 gap-lg-3">
+        <button class="btn btn-sm fw-bold btn-primary" (click)="copyTable('template-html')">
+            Copy E-Signature
+        </button>
+    </div>
+</div>
+<section class="clarkoutsourcing-template-html" style="padding-top: 20px; padding-bottom: 40px; display: flex; justify-content: center;" *ngIf="showSectionClarkoutsourcing && userdata">
+    <table id="template-html" cellspacing="0" cellpadding="0"
+        style="width:864px; height:259px; background-image: url(https://esig.clarkoutsourcing.com/template-img/esigbgnew.png); background-repeat: no-repeat; background-position: center;">
+        <tr>
+            <td colspan="2" style=" text-align: end; position: relative; vertical-align: bottom;">
+                <div
+                    style=" background-image: url(https://esig.clarkoutsourcing.com/template-img/center-logo-170.png); background-position: 85% center; padding-top:4px; padding-right: 28px; background-repeat: no-repeat; min-height: 157px;">
+                    <img [src]=" userdata.profile || './assets/media/avatars/default-profile-picture.jpg'"
+                        style="border: 4px solid #88151a;border-radius:50%; background:white; width: 140px; height: 140px;">
+                </div>
+            </td>
+            <td style="width: 65%; vertical-align: bottom; padding-bottom: 4px;">
+                <table style="width: 100%; text-align: left">
+                    <tbody>
+                        <tr>
+                            <th class="staff-name"
+                                style="font-family: 'Poppins', sans-serif; font-size: 1.6rem; line-height: 22px; color:#71202d;">
+                                {{ userdata.fullName }}
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="staff-position"
+                                style="font-family: 'Poppins', sans-serif; padding-top:5px; font-size: 1.2rem; color:#71202d; font-weight: 400;">
+                                {{ userdata.position }}</th>
+                        </tr>
+                        <tr>
+                            <th class="staff-phone"
+                                style="display:flex; font-family: 'Poppins', sans-serif; font-size: .9rem; color:#11477c;padding-top: 2px; line-height: 22px; font-weight: 400;">
+                                <img width="20" src="https://esig.clarkoutsourcing.com/template-img/phone.png"
+                                    style="margin-right: 5px;">
+
+                                    {{ userdata.phoneNumber }}
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="staff-email"
+                                style="display:flex; font-family: 'Poppins', sans-serif; font-size: .9rem; color:#11477c; line-height: 22px; font-weight: 400; padding-top:2px; padding-bottom: 2px;">
+                                <img width="20" src="https://esig.clarkoutsourcing.com/template-img/email.png"
+                                    style="margin-right: 5px;"> 
+                                    <a
+                                    style="text-decoration: none !important; color:#11477c; "
+                                    href="mailto:robin@clarkoutsourcing.com">
+                                    {{ userdata.emailAddress }}
+                                </a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="staff-skype"
+                                style="display:flex; font-family: 'Poppins', sans-serif; font-size: .9rem; color:#11477c; line-height: 22px; font-weight: 400;">
+                                <img width="20" src="https://esig.clarkoutsourcing.com/template-img/skype.png"
+                                    style="margin-right:5px;">
+                                    {{ userdata.skypeId }}
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: right; padding-bottom: 10px; overflow: hidden;"><a
+                    style="color:#fff; text-decoration: none; background-color: #71202d; padding: 7px 20px; font-size: 12px; border-top-left-radius: 15px; border-bottom-left-radius: 15px;"
+                    href="https://streaklinks.com/BfimvOWv743qdNv1PAN1TyAj/https%3A%2F%2Fairtable.com%2FshroBsQFsCWhNVZoI"
+                    target="_blank" rel="noopener">How did we COmmunicate? Let us know!</a></td>
+        </tr>
+        <tr style="height: 25px; position: relative;">
+            <td style="width: 25%; text-align: left; padding-left: 10px;">
+                <a style="color: #fff; text-decoration:none !important; position: relative; z-index: 3; font-size: 9px; font-weight: 400;"
+                    href="https://clarkoutsourcing.com/" target="_blank" rel="noopener">www.clarkoutsourcing.com </a>
+            </td>
+            <td colspan="2"
+                style=" text-align: right; padding-right: 10px; font-weight: 600; font-size: 10px; color: #88151a; position: absolute; right: 0; bottom: 3px;">
+                &nbsp; <span style="color:#0d4b80;">US:</span>+1-727-601-0091&nbsp;|&nbsp;<span
+                    style="color:#0d4b80;">UK:</span>+44-204-586-3884&nbsp;|&nbsp;<span
+                    style="color:#0d4b80;">AUS:</span>+61-279-087-949&nbsp;|&nbsp;<span
+                    style="color:#0d4b80;">PH:</span>+0286727883 &nbsp;|&nbsp;<span
+                    style="color:#0d4b80;">Toll-free:</span>+1-800-373-5589&nbsp;
+            </td>
+        </tr>
+    </table>
+
+</section>
+
+
+<section class="clarkoutsourcing-template-html" style="padding-top: 20px; padding-bottom: 40px; display: flex; justify-content: center;" *ngIf="showSectionClarkstaff && userdata">
+    <table id="template-html" cellspacing="0" cellpadding="0"
+        style="width:864px; height:259px; background-image: url(https://esig.clarkoutsourcing.com/template-img/Email-cs.png); background-repeat: no-repeat; background-position: center;">
+        <tr>
+            <td colspan="2" style=" text-align: end; position: relative; vertical-align: bottom;">
+                <div
+                    style=" background-image: url(https://esig.clarkoutsourcing.com/template-img/center-logo-170.png); background-position: 85% center; padding-top:4px; padding-right: 28px; background-repeat: no-repeat; min-height: 157px;">
+                    <img [src]=" userdata.profile || './assets/media/avatars/default-profile-picture.jpg'"
+                        style="border: 4px solid #88151a;border-radius:50%; background:white; width: 140px; height: 140px;">
+                </div>
+            </td>
+            <td style="width: 65%; vertical-align: bottom; padding-bottom: 4px;">
+                <table style="width: 100%; text-align: left">
+                    <tbody>
+                        <tr>
+                            <th class="staff-name"
+                                style="font-family: 'Poppins', sans-serif; font-size: 1.6rem; line-height: 22px; color:#71202d;">
+                                {{ userdata.fullName }}
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="staff-position"
+                                style="font-family: 'Poppins', sans-serif; padding-top:5px; font-size: 1.2rem; color:#71202d; font-weight: 400;">
+                                {{ userdata.position }}</th>
+                        </tr>
+                        <tr>
+                            <th class="staff-phone"
+                                style="display:flex; font-family: 'Poppins', sans-serif; font-size: .9rem; color:#11477c;padding-top: 2px; line-height: 22px; font-weight: 400;">
+                                <img width="20" src="https://esig.clarkoutsourcing.com/template-img/phone.png"
+                                    style="margin-right: 5px;">
+
+                                    {{ userdata.phoneNumber }}
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="staff-email"
+                                style="display:flex; font-family: 'Poppins', sans-serif; font-size: .9rem; color:#11477c; line-height: 22px; font-weight: 400; padding-top:2px; padding-bottom: 2px;">
+                                <img width="20" src="https://esig.clarkoutsourcing.com/template-img/email.png"
+                                    style="margin-right: 5px;"> 
+                                    <a
+                                    style="text-decoration: none !important; color:#11477c; "
+                                    href="mailto:robin@clarkoutsourcing.com">
+                                    {{ userdata.emailAddress }}
+                                </a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="staff-skype"
+                                style="display:flex; font-family: 'Poppins', sans-serif; font-size: .9rem; color:#11477c; line-height: 22px; font-weight: 400;">
+                                <img width="20" src="https://esig.clarkoutsourcing.com/template-img/skype.png"
+                                    style="margin-right:5px;">
+                                    {{ userdata.skypeId }}
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: right; padding-bottom: 10px; overflow: hidden;"><a
+                    style="color:#fff; text-decoration: none; background-color: #71202d; padding: 7px 20px; font-size: 12px; border-top-left-radius: 15px; border-bottom-left-radius: 15px;"
+                    href="https://streaklinks.com/BfimvOWv743qdNv1PAN1TyAj/https%3A%2F%2Fairtable.com%2FshroBsQFsCWhNVZoI"
+                    target="_blank" rel="noopener">How did we COmmunicate? Let us know!</a></td>
+        </tr>
+        <tr style="height: 25px; position: relative;">
+            <td style="width: 25%; text-align: left; padding-left: 10px;">
+                <a style="color: #fff; text-decoration:none !important; position: relative; z-index: 3; font-size: 9px; font-weight: 400;"
+                    href="https://clarkstaff.com" target="_blank" rel="noopener">www.clarkstaff.com </a>
+            </td>
+            <td colspan="2"
+                style=" text-align: right; padding-right: 10px; font-weight: 600; font-size: 10px; color: #88151a; position: absolute; right: 0; bottom: 3px;">
+                &nbsp; <span style="color:#0d4b80;">US:</span>+1-727-601-0091&nbsp;|&nbsp;<span
+                    style="color:#0d4b80;">UK:</span>+44-204-586-3884&nbsp;|&nbsp;<span
+                    style="color:#0d4b80;">AUS:</span>+61-279-087-949&nbsp;|&nbsp;<span
+                    style="color:#0d4b80;">PH:</span>+0286727883 &nbsp;|&nbsp;<span
+                    style="color:#0d4b80;">Toll-free:</span>+1-800-373-5589&nbsp;
+            </td>
+        </tr>
+    </table>
+
+</section>
+
+<section class="bee-template-html" style="padding-top: 20px; padding-bottom: 40px; display: flex; justify-content: center;" *ngIf="showSectionBees && userdata">
+    <table id="template-html" cellspacing="0" cellpadding="0"
+        style="width:864px; height:255px; background-image: url(https://clarkstaff.com/wp-content/uploads/2023/11/beeesigbg.png); background-repeat: no-repeat; background-position: center;">
+        <tr>
+            <td colspan="2" style=" text-align: end; position: relative; vertical-align: bottom;">
+                <div style="margin-top:39px;">
+                    <img [src]=" userdata.profile || './assets/media/avatars/default-profile-picture.jpg'"
+                        style="border: 6px solid #0A084D; margin-right: 25px; background:white; width: 140px; height: 140px; border-bottom-right-radius: 65px; border-top-left-radius: 65px; border-left-color: #BC911D; border-bottom-color: #BC911D;">
+                </div>
+            </td>
+            <td style="width: 65%; vertical-align: bottom; padding-bottom: 4px;">
+                <table style="width: 100%; text-align: left">
+                    <tbody>
+                        <tr>
+                            <th class="staff-name"
+                                style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; line-height: 22px; color:#0A084D;">
+                                {{ userdata.fullName }}
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="staff-position"
+                                style="font-family: 'Poppins', sans-serif; padding-top:5px; font-size: 1.1rem; padding-bottom: 10px; color:#0A084D; font-weight: 400;">
+                                {{ userdata.position }}</th>
+                        </tr>
+                        <tr>
+                            <th class="staff-phone"
+                                style="display:flex; font-family: 'Poppins', sans-serif; font-size: .9rem; color:#0A084D;padding-top: 2px; line-height: 22px; font-weight: 400;">
+                                <img width="20" src="https://clarkstaff.com/wp-content/uploads/2023/11/cphone-1.png"
+                                    style="margin-right: 5px;">
+
+                                    {{ userdata.phoneNumber }}
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="staff-email"
+                                style="display:flex; font-family: 'Poppins', sans-serif; font-size: .9rem; color:#0A084D; line-height: 22px; font-weight: 400; padding-top:2px; padding-bottom: 2px;">
+                                <img width="20" src="https://clarkstaff.com/wp-content/uploads/2023/11/cemail-1.png"
+                                    style="margin-right: 5px;"> 
+                                    <a
+                                    style="text-decoration: none !important; color:#0A084D; "
+                                    href="mailto:robin@clarkoutsourcing.com">
+                                    {{ userdata.emailAddress }}
+                                </a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="staff-skype"
+                                style="display:flex; font-family: 'Poppins', sans-serif; font-size: .9rem; color:#0A084D; line-height: 22px; font-weight: 400;">
+                                <img width="20" src="https://clarkstaff.com/wp-content/uploads/2023/11/skype-1.png"
+                                    style="margin-right:5px;">
+                                    {{ userdata.skypeId }}
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: right;"><a
+                    style="color:#fff; text-decoration: none; background-color: #0A084D; padding: 7px 20px; font-size: 12px; border-top-left-radius: 15px; border-bottom-left-radius: 15px;"
+                    href="https://streaklinks.com/BfimvOWv743qdNv1PAN1TyAj/https%3A%2F%2Fairtable.com%2FshroBsQFsCWhNVZoI"
+                    target="_blank" rel="noopener">How did we COmmunicate? Let us know!</a></td>
+        </tr>
+        <tr style="height: 35px; position: relative;">
+            <td style="text-align: left; padding-left: 20px; background-color: transparent;">
+                <a style="color: #fff; text-decoration:none !important; position: relative; z-index: 3; font-size: 9px; font-weight: 400;"
+                    href="https://thebrandingbees.com/" target="_blank" rel="noopener">www.thebrandingbees.com </a>
+            </td>
+            <td  colspan="2" style=" width:75%; text-align: left; padding-right: 10px; font-weight: 400; font-size: 10px; color: #0A084D; padding-bottom: 5px;">
+             
+            </td>
+        </tr>
+    </table>
+
+</section>

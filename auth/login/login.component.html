@@ -1,0 +1,32 @@
+<!--begin::Form-->
+<form class="form w-100" novalidate="novalidate" id="kt_login_signin_form">
+  <!--begin::Heading-->
+  <div class="text-center mb-10">
+    <h1 class="text-dark mb-3">Sign In</h1>
+  </div>
+  <!--end::Heading-->
+
+  <!--begin::Login options-->
+  <div class="row g-3 mb-9">
+    <!--begin::Col-->
+    <div class="col-md">
+      <!--begin::Google link=-->
+      <div class="d-flex align-items-center justify-content-center bg-white position-relative rounded-pill overflow-hidden">
+        <asl-google-signin-button type="standard" shape="pill" text="continue_with" width="399px" logo_alignment="center" size="medium"></asl-google-signin-button>
+      </div>
+    </div>
+    <!--end::Col-->
+  </div>
+  <!--end::Login options-->
+</form>
+<!--end::Form-->
+
+<ng-template #formError let-control="control" let-message="message" let-validation="validation">
+  <ng-container *ngIf="control.hasError(validation) && (control.dirty || control.touched)">
+    <div class="fv-plugins-message-container">
+      <span role="alert" class="text-danger">
+        {{ message }}
+      </span>
+    </div>
+  </ng-container>
+</ng-template>

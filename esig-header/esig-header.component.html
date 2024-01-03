@@ -1,0 +1,36 @@
+<div class="d-flex align-items-center container-xxl">
+    <!--begin::Heaeder menu toggle-->
+    <div class="d-flex topbar align-items-center d-lg-none ms-n2 me-3" title="Show aside menu">
+      <div class="btn btn-icon btn-active-light-primary btn-custom w-30px h-30px w-md-40px h-md-40px" id="kt_header_menu_mobile_toggle">
+        <!--begin::Svg Icon | path: icons/duotune/abstract/abs015.svg-->
+        <!-- <span
+          [inlineSVG]="'./assets/media/icons/duotune/abstract/abs015.svg'"
+          class="svg-icon svg-icon-1"
+        ></span> -->
+        <!--end::Svg Icon-->
+      </div>
+    </div>
+    <!--end::Heaeder menu toggle-->
+    <!--begin::Header Logo-->
+    <div class="header-logo me-5 me-md-10 flex-grow-1 flex-lg-grow-0">
+      <a routerLink="/dashboard">
+        <img alt="Logo" src="./assets/media/logos/clarkoutsourcing.png" class="logo-default h-45px hover-scale">
+      </a>
+    </div>
+    <!--end::Header Logo-->
+    <!--begin::Wrapper-->
+    <div class="d-flex align-items-stretch justify-content-end flex-lg-grow-1">
+      <!-- begin::User -->
+        <div class="d-flex align-items-center" id="kt_header_user_menu_toggle">
+            <!-- begin::Toggle -->
+            <div class="cursor-pointer symbol" data-kt-menu-trigger="hover"
+            data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end" data-kt-menu-flip="bottom">
+            <a (click)="logout()" class="menu-link px-5 cursor-pointer fw-semibold btn btn-primary ms-3 p-0 pt-2 pb-2 pe-5 ps-5"> Sign Out </a>
+            </div>
+            <!-- end::Toggle  -->
+        </div>
+        <!-- end::User -->
+    </div>
+    <!--end::Wrapper-->
+  </div>
+  
